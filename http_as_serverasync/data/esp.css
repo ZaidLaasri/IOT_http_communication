@@ -1,0 +1,57 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Les classes Bootstrap gèrent déjà le centrage du texte et les couleurs */
+h1 {
+    color: #333;
+}
+
+/* Ces styles personnalisés ne sont pas nécessaires car Bootstrap s'en charge avec ses propres classes */
+/*.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+}*/
+
+/* Vous pouvez garder ceci pour un style spécifique non couvert par Bootstrap */
+.status-section, .network-section, .sensors-section {
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 10px;
+    margin-bottom: 20px; /* Bootstrap utilise .mb-4 pour un espace similaire */
+}
+
+/* Bootstrap a des classes pour les marges, tailles, et bordures */
+label, input, input[type="submit"] {
+    border-radius: 5px;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Crée deux colonnes de même largeur */
+    gap: 10px; /* Ajoute un espace entre les éléments de la grille */
+}
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+}
+
+/* Utilisez les classes de bouton Bootstrap comme .btn et .btn-primary pour ces styles */
+input[type="submit"] {
+    background-color: #009688;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+}
+
+input[type="submit"]:hover {
+    background-color: #00796b;
+}
