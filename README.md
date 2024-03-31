@@ -31,12 +31,14 @@ Ce document décrit les principales fonctionnalités du serveur web asynchrone E
 - **`GET /control`** : Route responsable du contrôle de l'ESP à partir du dashboard, permettant l'allumage et l'extinction des LEDs et du bandeau LED, la saisie de la vitesse du ventilateur, et le contrôle du mode automatique. Un avertissement de détection de feu est également affiché sur le dashboard et change d'état en fonction de la valeur de la variable `fire`, qui est liée aux seuils prédéfinis.
 
 N.B : les fonctions request du shéma node-red contiennent pour le moment des urls avec des adresses ip statiques de cette forme "msg.url = "http://172.20.10.14/control?fanspeed=" + msg.payload.fanspeed;
-return msg;" veuillez mettre votre adresse ip pour que ça marche.
+return msg;" 
+veuillez mettre votre adresse ip pour que ça marche.
 
 ### Dashboard 
 
 N.B : les fonctions request du shéma node-red contiennent pour le moment des urls avec des adresses ip statiques de cette forme "msg.url = "http://172.20.10.14/control?fanspeed=" + msg.payload.fanspeed;
-return msg;" veuillez mettre votre adresse ip pour que ça marche.
+return msg;" 
+veuillez mettre votre adresse ip pour que ça marche.
 
 - Le dashboard offre une visualisation en temps réel des données des capteurs, ainsi que des contrôles interactifs pour les LEDs, le bandeau LED, la vitesse du ventilateur, et le mode automatique. Un indicateur d'alerte pour la détection de feu change dynamiquement en fonction de la situation.
 
